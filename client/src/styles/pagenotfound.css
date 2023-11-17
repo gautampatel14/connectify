@@ -1,0 +1,19 @@
+.page-not-found{
+
+    margin-top: 9vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+}
+
+
+
+@media(max-width:400px){
+
+    .not-found-svg{
+
+        /* height: 12rem; */
+        width: 12rem !important;
+
+    }
+}

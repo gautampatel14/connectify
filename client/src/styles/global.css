@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:wght@300;400;500;700&display=swap');
+
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  /* font-family: "josefin sans",sans-serif; */
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#theme {
+  display: none;
+}
+#theme:checked ~ * {
+  filter: invert(1);
+}
+
+.App {
+  width: 100%;
+  /* min-height: 100vh; */
+  height: 100%;
+  /* background-color: rgb(243 242 240); */
+  background-color: #f1f5f9;
+}
+
+.main {
+  /* max-width: 1200px; */
+  width: 100%;
+  height: 100%;
+  /* min-height: 100vh; */
+  /* margin: auto; */
+}
+
+img {
+  object-fit: cover;
+}
+
+/* -------- AUTH ---------- */
+@import url("./auth.css");
+
+/* -------- LOADING ---------- */
+@import url("./loading.css");
+
+/* -------- Header ---------- */
+@import url("./header.css");
+
+/* -------- Avatar ---------- */
+@import url("./avatar.css");
+
+/* -------- Header ---------- */
+@import url("./header.css");
+
+/* -------- Profile ---------- */
+@import url("./profile.css");
+
+/* -------- Home ---------- */
+@import url("./home.css");
+
+/* -------- Status Modal ---------- */
+@import url("./status_modal.css");
+
+/* -------- Comments ---------- */
+@import url("./comments.css");
+
+/* -------- Post Thumb ---------- */
+@import url("./post_thumb.css");
+
+/* -------- Message---------- */
+@import url("./message.css");
+
+/* -------- Icons---------- */
+@import url("./icons.css");
+
+/* -------- Call Modal---------- */
+@import url("./call_modal.css");
+
+
+@import url("./discover.css");
+
+
+
+/* --------- Responsive ------ */
+@media (max-width: 766px){
+
+  .header .menu{
+      width: 100%;
+      height: 40px;
+  }
+  .header .menu .navbar-nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  .header .search_form{
+      width: 100%;
+  }
+  .header .logo{
+      margin: auto;
+  }
+  .header .logo h1{
+      font-size: 1.5rem;
+  }
+  
+  .message{
+    height: calc(100vh - 100px);
+  }
+  .right_mess,
+  .left_mess{
+    display: none;
+  }
+  .status{
+    padding: 20px 10px;
+  }
+}
+
+.mode{
+  width: 100%;
+  /* height: 100vh; */
+  overflow: hidden;
+}
+
+
+
+.menu .navbar-nav{
+
+  display: block;
+  margin-top: 10px;
+}
+
+.menu .navbar ul li {
+  
+  margin-top: 1.25rem !important;
+  padding-left: 0px !important;
+}
+
+
+.posts .card{
+  font-family: cursive !important;
+}
+
+.follow-unfollow-btn{
+  color: #dc2f02;
+  background-color: #f4eeee69;
+  box-shadow: 0px 0px 2px rgb(179, 177, 177);
+  padding: .4rem;
+  border-radius: .7rem;
+}
+
+
+div::-webkit-scrollbar {
+  
+  width: 5px !important;
+  /* background: transparent; */
+  border: #7b014c;
+}
+
+
+.middle-part.with-custom-scrollbar, .discover-part.with-custom-scrollbar {
+  overflow-y: scroll;
+}
+
+.middle-part.with-custom-scrollbar::-webkit-scrollbar, .discover-part.with-custom-scrollbar::-webkit-scrollbar{
+  width: 12px;
+
+}
+
+.middle-part.with-custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #f4efefcb;
+
+}
+
+.middle-part.with-custom-scrollbar::-webkit-scrollbar-thumb, .discover-part.with-custom-scrollbar::-webkit-scrollbar-thumb{
+  background-color: #dc2f02;
+
+  border-radius: 6px;
+
+}
+
+.middle-part.with-custom-scrollbar::-webkit-scrollbar-thumb:hover,.discover-part.with-custom-scrollbar::-webkit-scrollbar-thumb:hover{
+  /* background-color: #555; */
+  
+}
+
+@media (max-width: 500px) {
+
+  h4 {
+    font-size: 1.2rem !important;
+  }
+}

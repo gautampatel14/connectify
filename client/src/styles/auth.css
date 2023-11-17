@@ -1,0 +1,124 @@
+
+body.login_register_background {
+    background-color: #fff8ef;
+    
+}
+
+.main{
+    /* background-color: #fff8ef; */
+}
+
+.auth_page{
+    width: 100%;
+    min-height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.auth_page form{
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 50px 25px;
+}
+
+.auth_page form .pass{
+    position: relative;
+}
+
+.auth_page form .pass small{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.login-btn,.reg-btn{
+    background: #dc2f02;
+    color: white;
+}
+
+.login-btn:hover{
+    color: white;
+}
+.reg-btn:hover{
+    opacity: .90;
+    color: white;
+}
+
+.log-reg-from{
+        background: rgba(255, 255, 255, 0.0) !important;
+        border-radius: 16px !important ;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05) !important;
+        backdrop-filter: blur(3.1px) !important;
+        /* -webkit-backdrop-filter: blur(8.1px) !important;  */
+        border: 1px solid rgba(255, 255, 255, 0.3)  !important;
+        z-index: 1;
+}
+
+.glassSquare {
+    position: absolute;
+    width: 150px;
+    /* Set the width of each square */
+    height: 150px;
+    /* Set the height of each square */
+    /* background: rgba(255, 255, 255, 0.1); */
+    /* Adjust the alpha channel for transparency */
+    backdrop-filter: blur(10px);
+    /* Adjust the blur effect */
+    border-radius: 10px;
+    pointer-events: none;
+    /* Allow clicks to go through the square */
+}
+
+.auth_page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.glassSquare {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    pointer-events: none;
+    
+}
+
+.auth_page{
+
+    overflow: hidden;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .glassSquare {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+
+@media screen and (max-width: 525px) {
+    
+    .log-reg-from {
+        
+            background: rgba(255, 255, 255, 0.0) !important;
+            border-radius: 16px !important;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05) !important;
+            backdrop-filter: blur(1.1px) !important;
+            -webkit-backdrop-filter: blur(8.1px) !important; 
+            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+            z-index: 1;
+        }
+}

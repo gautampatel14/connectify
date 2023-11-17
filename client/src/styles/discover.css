@@ -1,0 +1,24 @@
+.discover{
+    margin-top:9vh;
+}
+.discover-part{
+    height: 91vh;
+    width: calc(100% - 200px);
+    overflow-y: scroll;
+}
+
+.discover-control{
+    padding:0 1rem;
+}
+
+
+@media (max-width: 765px) {
+
+    .discover-part{
+    width: 100%;
+    
+}
+
+
+}
+

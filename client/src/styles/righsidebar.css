@@ -1,0 +1,13 @@
+
+.suggestion-div{
+        border-radius: 40px !important;
+        background: rgb(225, 225, 225, .20);
+        border: 0px solid rgba(255, 255, 255, 1);
+        box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
+        -webkit-backdrop-filter: blur(1.5px);
+}
+
+.d-block{
+        text-decoration: none;
+}
+
