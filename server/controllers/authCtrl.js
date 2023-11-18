@@ -10,6 +10,7 @@ const authCtrl = {
     register: async (req, res) => {
         try {
 
+            console.log("Register")
             const { fullname, username, email, password, gender } = req.body
             let newUserName = username.toLowerCase().replace(/ /g, '')   // remove all space and convert to lowercase
 
